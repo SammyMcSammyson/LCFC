@@ -46,7 +46,7 @@ export default async function StandingsPage() {
                           match.team.id == '338' ? 'leicester-team' : ''
                         }
                       >
-                        {match.team.name}
+                        {match.team.tla}
                       </td>
                       <td
                         className={

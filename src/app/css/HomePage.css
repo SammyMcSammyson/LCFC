@@ -119,3 +119,58 @@
   text-align: left;
   font-size: 24px;
 }
+
+@media (max-width: 320px) {
+  /* iPhone, portrait 480x320 */
+  .teletext-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+@media (min-width: 321px) and (max-width: 481px) {
+  /*smaller tablets */
+  .teletext-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0.4rem;
+  }
+  .standings-table {
+    width: 100%;
+    display: block; /* Make the table scrollable */
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+    font-size: 0.7rem; /* Reduce font size */
+  }
+
+  .standings-table th,
+  .standings-table td {
+    padding: 0.3rem 0.4rem; /* Reduce padding further for small screens */
+  }
+
+  /* Adjust table header and body to fit small screens */
+  .standings-table th,
+  .standings-table td {
+    white-space: nowrap; /* Prevent wrapping */
+  }
+}
+@media (min-width: 482px) and (max-width: 641px) {
+  /*portrait iPad */
+  .teletext-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
+@media (min-width: 642px) and (max-width: 961px) {
+  /*landscape iPad */
+}
+
+@media (min-width: 962px) and (max-width: 1025px) {
+  /*laptops */
+}
+@media (min-width: 1026px) {
+  /* desktops */
+}
