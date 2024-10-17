@@ -3,25 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --teletext-black: #000000;
+  --lcfc-blue: #0053a0;
+  --teletext-yellow: #ffff00;
+  --teletext-cyan: #00ffff;
+  --teletext-magenta: #ff00ff;
+  --teletext-green: #00ff00;
+  --teletext-red: #ff0000;
+  --teletext-blue: #0000ff;
+  --teletext-white: #ffffff;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--teletext-black);
+  color: var(--teletext-white);
+  font-family: 'VT323', monospace;
+  padding: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1 {
+  color: var(--teletext-yellow);
+}
+
+p {
+  color: var(--teletext-cyan);
+}
+
+.text-red {
+  color: var(--teletext-red);
+}
+
+.text-green {
+  color: var(--teletext-green);
+}
+
+.text-magenta {
+  color: var(--teletext-magenta);
+}
+
+.teletext-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px 0;
 }
