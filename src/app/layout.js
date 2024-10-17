@@ -1,7 +1,7 @@
 import localFont from 'next/font/local';
 import './globals.css';
 import { VT323 } from 'next/font/google';
-import NavBar from '/home/sammysammyson/Tech Educators/Learning/Demos/lcfc/src/Components/NavBar.jsx';
+import NavBar from '../Components/NavBar';
 import { normalizeConfig } from 'next/dist/server/config';
 
 const spaceFont = VT323({
