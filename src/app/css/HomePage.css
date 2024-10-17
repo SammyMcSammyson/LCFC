@@ -166,11 +166,29 @@
 }
 @media (min-width: 642px) and (max-width: 961px) {
   /*landscape iPad */
+  .teletext-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
 }
 
 @media (min-width: 962px) and (max-width: 1025px) {
   /*laptops */
+  .teletext-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
 }
 @media (min-width: 1026px) {
   /* desktops */
+  .teletext-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
+  }
 }
